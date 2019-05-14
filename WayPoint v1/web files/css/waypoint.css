@@ -1,0 +1,318 @@
+* {
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+    background-color: #40C5A7;
+}
+
+main {
+	overflow: auto;
+ }
+
+.chat-box {
+    position:fixed;
+    right:15px;
+    bottom:75px;
+}
+
+#navbar {
+	margin: 0 auto;
+    height: 14%;
+    width: 100%;
+    background-color: #2A7A6A;
+    overflow: auto;
+    position:fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #40C5A7;
+}
+	
+.homelogo {
+  max-width: 100px;
+  height: auto;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+#navbar ul {
+    width: 50%;
+}
+
+#navbar li {
+    display: inline-block;
+    margin: 3% 5%;
+}
+
+.navon {
+    color: #FFF593;
+}
+
+.searchbar {
+  max-width: 250px;
+  height: auto;
+  margin: 2%;
+  flex: auto
+  }    
+
+/*BEGIN FLEX BOX STUFF HERE*/
+
+*{box-sizing: border-box;}
+   
+
+.columnbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.firstcolumn{
+    flex: auto;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    width: 53%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 3%;    
+}
+
+.firstcolumn img{
+    margin: 5%;
+    float:left;
+}
+
+.firstcolumn h1 {
+    color: #FFF593;
+    text-align: left;
+    font-size: 22pt;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.firstcolumn h2 {
+    color: white;
+    text-align: left;
+    font-size: 13pt;
+    margin-bottom: 2%;
+}
+
+.column{
+    flex: auto;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    width: 53%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;    
+}
+
+.column img{
+    margin: 5%;
+    float:left;
+}
+
+.column h1 {
+    color: #FFF593;
+    text-align: left;
+    font-size: 22pt;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.column h2 {
+    color: white;
+    text-align: left;
+    font-size: 13pt;
+    margin-bottom: 2%;
+}
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            margin-top: 10%;
+        }
+        
+        /* create 2 equal columns that sit next to each other by defining flex: 50% */
+        
+        .twocolumn {
+            flex:50%;
+            max-width:50%;
+            padding: 0 4px;
+            }
+        
+        .twocolumn img {
+            margin-top: 3%;
+            vertical-align: middle;
+        }
+        
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+           }
+
+
+        /* create 4 equal columns that sit next to each other by defining flex: 25% */
+
+        .fourcolumn {
+            flex:25%;
+            max-width:25%;
+            padding: 0 2%;
+            margin-bottom: 5%;
+            }
+        
+        .fourcolumn img {
+            margin-top: 3%;
+            vertical-align: middle;
+        }
+
+
+
+.tool {
+    height: auto;
+    width: 80%;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    margin: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 15px;
+    overflow:auto;
+  
+}
+
+.tooltitle {
+    color: #FFF593;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    height: auto;
+    width: 100%;
+}
+
+.topictitle {
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 100%;
+}
+
+.topicbox{
+    height: auto;
+    width: 90%;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    margin: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
+    overflow:auto;
+}
+
+
+/* media queries tell it how to adjust based on screen size. Below, flex will become 1 column by using 100% instead of 2 columns using 50% when screen is below 600px */
+        
+        
+@media (max-width: 1000px) {
+            .twocolumn {flex: 100%;
+                    max-width: 100%;}
+             
+             .fourcolumn {flex: 50%;
+                    max-width: 50%;}
+                          
+        }
+
+/*WIDTH RE-SIZING*/
+
+
+ @media (max-width: 900px) {
+        .tools {
+            margin-top: 10%;
+        }
+     
+     #navbar {
+    height: 13%;
+}
+     
+      .column {
+            width: 80%;
+        }  
+     .firstcolumn {
+            width: 80%;
+         margin-top: 20%;
+        }  
+}
+
+@media (max-width: 700px) {
+        .tools {
+            margin-top: 20%;
+        }
+     
+     #navbar {
+    height: 23%;      
+}
+    
+    
+}
+
+ @media (max-width: 600px) {
+        .tools {
+            margin-top: 25%;
+        }
+     
+     #navbar {
+    height: 23%;
+}
+}
+
+@media (max-width: 500px) {
+        .tools {
+            margin-top: 53%;
+        }
+     
+     #navbar {
+    height: 33%;
+}
+}
+
+/*HEIGHT RE-SIZING*/
+
+@media (max-height: 700px) {
+        /*.tools {
+            margin-top: 50%;
+        }*/
+     
+     #navbar {
+    height: 18%;
+}  
+}
+
+@media (max-height: 500px) {
+        /*.tools {
+            margin-top: 50%;
+        }*/
+     
+     #navbar {
+    height: 23%;
+}  
+}
+
+@media (max-height: 200px) {
+        .tools {
+            margin-top: 50%;
+        }
+     
+     #navbar {
+    height: 55%;
+}  
+}
